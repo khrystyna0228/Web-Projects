@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fated — Auth</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background: #ffffff;
+        }
+        .title-font {
+            font-family: "Cherry Bomb One", cursive;
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            body {
+                background: #ffffff !important;
+            }
+            .screen {
+                max-width: 600px !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                padding-top: 100px !important;
+            }
+            .title-font { font-size: 56px !important; }
+            .logo-img { width: 150px !important; }
+            .switch-btn { height: 52px !important; font-size: 18px !important; }
+            .input-field { height: 55px !important; font-size: 17px !important; }
+            .main-btn { height: 55px !important; font-size: 18px !important; }
+        }
+
+        @media (min-width: 900px) {
+            body {
+                background: #FF5F5F !important;
+            }
+            .screen {
+                max-width: 430px !important;
+                min-height: 65vh !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                padding-top: 60px !important;
+            }
+            .title-font { font-size: 60px !important; }
+            .logo-img { width: 170px !important; }
+            .switch-btn { height: 56px !important; font-size: 19px !important; }
+            .input-field { height: 55px !important; font-size: 17px !important; }
+            .main-btn { height: 58px !important; font-size: 19px !important; }
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center min-h-screen">
+
+<div class="screen bg-[#FF5F5F] w-full max-w-[414px] min-h-screen rounded-[40px] shadow-xl flex flex-col items-center pt-24 px-6">
+
+    <img src="./heart_for_screen.png" class="logo-img w-28 mb-4" alt="logo" />
+
+    <h1 class="title-font text-white text-4xl mb-10">FATED</h1>
+
+    <div class="flex w-full max-w-[330px] justify-between mb-8">
+        <button class="switch-btn w-[48%] h-11 rounded-lg font-extrabold text-white bg-[#FF7A7A]">
+            REGISTER
+        </button>
+
+        <button class="switch-btn w-[48%] h-11 rounded-lg font-extrabold text-[#FF5F5F] bg-white">
+            LOGIN
+        </button>
+    </div>
+
+    <form class="w-full max-w-[330px] flex flex-col gap-4">
+
+        <input type="text" placeholder="user name"
+               class="input-field w-full h-12 text-center rounded-lg border-none" />
+
+        <input type="password" placeholder="password"
+               class="input-field w-full h-12 text-center rounded-lg border-none" />
+
+        <p class="text-[11px] text-white text-right -mt-1">FORGOT PASSWORD?</p>
+
+        <button class="main-btn w-full h-12 bg-white text-[#FF5F5F] rounded-lg font-extrabold text-[17px]">
+            LOGIN
+        </button>
+    </form>
+
+    <p class="text-white text-[12px] mt-6">
+        DON'T HAVE AN ACCOUNT?
+        <span class="font-extrabold">REGISTER</span>
+    </p>
+</div>
+</body>
+</html>

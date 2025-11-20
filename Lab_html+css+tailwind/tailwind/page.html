@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Screen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @media (min-width: 768px) {
+            .screen-container {
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                background: transparent !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                max-width: none !important;
+                max-height: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white flex justify-center items-center min-h-screen p-5 overflow-hidden">
+
+<div class="screen-container bg-white w-full max-w-[414px] h-screen max-h-[896px]
+        flex flex-col items-center relative shadow-lg rounded-xl overflow-hidden
+        min-w-[320px] min-h-[568px]">
+
+    <div class="w-full h-[30vh] max-h-[240px] flex justify-center items-end mt-[12vh]">
+        <img src="couple.png"
+             class="w-[85%] max-w-[300px] max-h-[200px] object-contain
+                        md:w-[320px] lg:w-[340px] lg:max-w-[340px]">
+    </div>
+
+    <h2 class="bg-[#FF5F5F] text-white text-[18px] font-semibold tracking-wide
+                   px-8 py-3 rounded-md text-center mt-[8vh] leading-tight
+                   w-[85%] max-w-[280px]
+                   md:text-[20px] md:w-[340px] md:mt-[6vh]
+                   lg:text-[22px] lg:w-[340px] lg:mt-[5vh]">
+        CHAT WITH EASE
+    </h2>
+
+    <p class="text-[#5A5A64] text-[12px] text-center leading-[1.5] mt-[4vh] tracking-wide
+                  w-[90%] max-w-[320px] px-2
+                  md:text-[14px] md:w-[450px]
+                  lg:text-[15px] lg:w-[500px]">
+        Maecenas in placerat nibh. Integer sollicitudin sapien et massa varius venenatis.
+        Nulla facilisis purus nec nibh posuere volutpat.
+    </p>
+
+    <div class="absolute bottom-[8vh] left-1/2 -translate-x-1/2 flex items-center gap-6">
+
+
+        <a href="#"
+           class="bg-[#F5F5FF] text-[#32323C] text-[13px] font-semibold uppercase tracking-wide
+                      px-6 py-2 rounded">
+            Skip
+        </a>
+
+        <div class="flex gap-3">
+            <div class="w-[10px] h-[10px] bg-[#F5F5FF] rounded-sm"></div>
+            <div class="w-[10px] h-[10px] bg-[#FF5F5F] rounded-sm"></div>
+            <div class="w-[10px] h-[10px] bg-[#F5F5FF] rounded-sm"></div>
+        </div>
+
+        <a href="#"
+           class="bg-[#FF5F5F] text-white text-[13px] font-semibold uppercase tracking-wide
+                      px-6 py-2 rounded">
+            Next
+        </a>
+
+    </div>
+
+</div>
+</body>
+</html>
