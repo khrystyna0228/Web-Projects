@@ -4,18 +4,12 @@ import UserCard from '@/components/UserCard.vue';
 </script>
 
 <template>
-  <div class="contact-page">
-    <h1>Сторінка контактів</h1>
+  <div class="p-5">
+    <h1 class="text-2xl font-bold mb-4">Сторінка контактів</h1>
     <p>Це наша нова сторінка контактів!</p>
 
-    <UserCard username="Student_1" :isActive="78798" /> //Vue: Type 'number' is not assignable to type 'boolean'.
+    <UserCard username="Student_1" :isActive="true" />
     <UserCard username="Student_2" :isActive="false" />
-
   </div>
 </template>
 
-<style scoped>
-.contact-page {
-  padding: 20px;
-}
-</style>
